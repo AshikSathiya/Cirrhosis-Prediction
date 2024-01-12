@@ -45,13 +45,30 @@ Cirrhosis is an advanced liver condition caused by various liver diseases, inclu
 <img width="596" alt="Screen Shot 2023-08-09 at 1 24 10 PM" src="https://github.com/AshikSathiya/Cirrhosis-Prediction/assets/92455762/2cf8f625-db1f-445c-913b-42348b68f351">
 
 # Results from Models
+## K-Nearest Neighbors (KNN)
+The K-Nearest Neighbors (KNN) model initially revealed varying class-specific performances. Notably, class 4 demonstrated superior results, especially in precision, recall, and F1-score metrics.
 
-For KNN, the default model presents varying class-specific metrics, with class 4 demonstrating the highest performance. Subsequent fine-tuning through GridSearchCV leads to minor enhancements in precision, recall, and F1-score, with class 4 still displaying improved results. Principal Component Analysis (PCA) maintains this pattern of performance in the third model. Overall accuracy and F1-scores are consistent across all KNN models.
+Upon fine-tuning with GridSearchCV, the KNN model showed minor yet notable improvements. These enhancements were primarily observed in class 4's predictive accuracy. This suggests a refined sensitivity of the model towards this specific class.
 
-Similarly, the Decision Tree models depict class-specific results, with class 4 achieving the highest performance in both the default and tuned configurations. The second model, post optimization, shows slight improvements in specific metrics, though the accuracy and F1-scores experience a reduction. The third model, employing PCA, maintains a comparable pattern of results.
+Incorporating Principal Component Analysis (PCA) into the KNN model maintained the trend of class-specific performance. This consistency across various configurations highlights the robustness of the KNN model in handling multiclass predictions, particularly for class 4.
 
-In Logistic Regression, class 4 again achieves the best performance in both the default and tuned models. However, the PCA-adjusted model exhibits consistent performance with slight variations in metrics.
+Overall, the KNN models displayed commendable consistency in accuracy and F1-scores. This aspect underscores their potential utility in classifying stages of cirrhosis with precision.
 
+## Decision Tree
+The Decision Tree models exhibited a pattern akin to KNN in terms of class-specific performance. Class 4, in particular, achieved the highest performance in the model's default configuration.
 
-# Recomendation
-Considering the close performance of all models, a single recommended model is challenging to uncertain. Factors such as interpretability and computational efficiency may guide the choice. Additionally, exploring ensemble methods, addressing class imbalances, advanced algorithms, feature engineering, and hyperparameter tuning could contribute to further performance enhancement. The process of experimentation and refinement is crucial to achieve the best model for the predicting the Stage of Cirrhosis accurately.
+Post optimization, the Decision Tree model displayed slight improvements in certain metrics. However, this was accompanied by a reduction in overall accuracy and F1-scores, indicating a nuanced balance between general accuracy and class-specific precision.
+
+The application of PCA in the third Decision Tree model variant did not significantly alter this performance pattern. This suggests a stable classification behavior of the Decision Tree model across different configurations.
+
+## Logistic Regression
+Logistic Regression models showed a similar trend, with class 4 consistently achieving the best performance. This was evident in both the default and the fine-tuned models.
+
+The introduction of PCA in the Logistic Regression model resulted in stable, albeit slightly varied, performance across different metrics. This stability is indicative of the model's robustness in multiclass classification, particularly relevant in medical datasets such as cirrhosis staging.
+
+# Recommendation
+The closely matched performance of all evaluated models makes selecting a single best model challenging. The decision must extend beyond mere performance metrics to include aspects like interpretability and computational efficiency.
+
+Exploring ensemble methods could leverage the strengths of individual models for improved overall performance. Additionally, addressing class imbalances, applying advanced algorithms, conducting comprehensive feature engineering, and extensive hyperparameter tuning are crucial.
+
+The journey towards an optimal model for accurately predicting the stage of Cirrhosis involves iterative experimentation and refinement. A holistic approach, encompassing all these factors, is recommended for developing an effective and reliable predictive model.
