@@ -2,10 +2,19 @@
 Ashik Sathiya
 ---
 
+## Cirrhosis Prediction - Data Cleaning
+### Overview
+This Jupyter notebook is part of a project focused on predicting cirrhosis. The primary goal of this notebook is to clean and prepare the dataset for further analysis and model building. This notebook is intended for data scientists, researchers, and anyone interested in medical data analysis, specifically in the domain of cirrhosis prediction.
+
+### Features
+Data Cleaning: Detailed steps to clean the dataset, including handling missing values, outliers, and data transformation.
+Data Exploration: Initial exploration of data to understand the features and their characteristics.
+Data Visualization: Basic visualizations to understand the distribution and relationship between different variables.
+
 ## Business Problem
 Cirrhosis is an advanced liver condition caused by various liver diseases, including hepatitis and chronic alcoholism. A Mayo Clinic trial focused on primary biliary cirrhosis (PBC) collected data from 424 patients referred to the clinic over ten years. Among them, 312 patients took part in a randomized drug trial, while the remaining 112 patients consented to basic measurements and survival monitoring. However, six of the latter group were lost to follow-up, leaving data on 106 non-participating cases and the 312 participants in the randomized trial. Our goal is to predict the Stage of Cirrhosis the Patient is in.
 
-Attribute Information
+### Attribute Information
 1) ID: unique identifier
 2) N_Days: number of days between registration and the earlier of death, transplantation, or study analysis time in July 1986
 3) Status: status of the patient C (censored), CL (censored due to liver tx), or D (death)
